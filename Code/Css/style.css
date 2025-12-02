@@ -1,14 +1,53 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+
 body{
-    padding: 0;
     margin: 0;
 }
 
-header{
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+section:nth-child(1){
+    background-color: rgb(38, 39, 39);
+    /* background-image: ;  PAS OUBLIER AJOUTER SVG*/ 
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
+}
+
+nav{
+    position:absolute;
+    height: 11vh;
+    width: 60%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    background-color: black;
-    margin: 0;
-    height: 120px;
-    font-size: 5em;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+section:nth-child(2){
+    background-color: rgb(0, 0, 0);
+}
+
+section:nth-child(3){
+    background-color: rgb(156, 173, 173);
 }
